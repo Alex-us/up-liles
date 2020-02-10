@@ -1048,6 +1048,7 @@ exports.patchSession = function (session) {
     session.park = park.bind(session);
     session.forward = forward.bind(session);
     session.startRecord = startRecord.bind(session);
+    session.startLocalRecord = setLocalRecord.bind(session);
     session.stopRecord = stopRecord.bind(session);
     session.flip = flip.bind(session);
     session.mute = mute.bind(session);
