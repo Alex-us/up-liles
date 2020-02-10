@@ -1351,6 +1351,10 @@ function setRecord(session, flag) {
     });
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
+function setLocalRecord(session) {
+    session.__onRecord = true;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
 function setLocalHold(session, flag) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
